@@ -1,13 +1,11 @@
-FROM node:18-alpine AS builder
+FROM node:20.9.0 AS builder
 
 # Establece el directorio de trabajo en el contenedor
 WORKDIR /app
 
-# Instala dependencias necesarias
-RUN apk add --no-cache libc6-compat
 
 # Copia los archivos de dependencias de Node.js
-COPY app/package.json app/package-lock.json ./
+COPY package.json package-lock.json ./
 
 # Instala las dependencias del proyecto
 RUN npm ci
