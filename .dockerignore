@@ -1,0 +1,81 @@
+CM
+node_modules
+npm-debug.log
+yarn-error.log
+
+# Control de versiones
+.git
+.gitignore
+
+# Next.js build output
+.next
+out
+
+# Archivos de entorno local
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Directorios y archivos de logs
+logs
+*.log
+
+# Archivos y directorios de configuración del editor
+.vscode
+.idea
+*.sublime-workspace
+*.swp
+*.swo
+
+# Archivos específicos del sistema operativo
+.DS_Store
+Thumbs.db
+
+# Archivos específicos de documentación y otros no esenciales
+README.md
+LICENSE
+*.md
+ginx", "-g", "daemon off;"]
+root@server:/home/queb/restaura-imagenes-antiguas-web#
+root@server:/home/queb/restaura-imagenes-antiguas-web# cat .dockerignore
+
+CM
+node_modules
+npm-debug.log
+yarn-error.log
+
+# Control de versiones
+.git
+.gitignore
+
+# Next.js build output
+.next
+out
+
+# Archivos de entorno local
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Directorios y archivos de logs
+logs
+*.log
+
+# Archivos y directorios de configuración del editor
+.vscode
+.idea
+*.sublime-workspace
+*.swp
+*.swo
+
+# Archivos específicos del sistema operativo
+.DS_Store
+Thumbs.db
+
+# Archivos específicos de documentación y otros no esenciales
+README.md
+LICENSE
+*.md
+ginx", "-g", "daemon off;"]
