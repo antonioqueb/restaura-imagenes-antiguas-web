@@ -189,8 +189,7 @@
 /* Media queries para pantallas pequeñas (smartphones) */
 @media (max-width: 600px) {
   .BoxInputImage__container {
-    padding: 20px;
-    width: 90%; /* Ajustar el ancho para pantallas pequeñas */
+    width: 50%; /* Ajustar el ancho para pantallas pequeñas */
     margin-top: 20px;
   }
 
@@ -224,13 +223,17 @@
   .BoxInputImage__text {
     font-size: 0.8rem; /* Reducir el tamaño de la fuente para el texto del pie de página */
   }
+
+  .BoxInputImage__button_input {
+    font-size: 0.7rem;
+  }
 }
 
 /* Media queries para tablets */
 @media (min-width: 601px) and (max-width: 1024px) {
   .BoxInputImage__container {
-    padding: 40px;
-    width: 80%; /* Ajustar el ancho para tablets */
+    width: 50%; /* Ajustar el ancho para tablets */
+    margin: 0 100px;
   }
 
   .BoxInputImage__title {
@@ -252,9 +255,7 @@
     height: 22px;
   }
 
-  .BoxInputImage__text_submit {
-    font-size: 1rem; /* Ajustar el tamaño de la fuente para el texto */
-  }
+ 
 
   .BoxInputImage__fileDetails {
     font-size: 1rem; /* Ajustar el tamaño de la fuente para los detalles del archivo */
@@ -263,4 +264,143 @@
   .BoxInputImage__text {
     font-size: 0.9rem; /* Ajustar el tamaño de la fuente para el texto del pie de página */
   }
+   .BoxInputImage__button_input {
+    font-size: 0.9rem;
+  }
+
+}
+
+/* Media queries para pantallas grandes (laptops y escritorios) */
+@media (min-width: 1005px) {
+  .BoxInputImage__container {
+    width: 70%; /* Ajustar el ancho para pantallas grandes */
+  }
+
+  .BoxInputImage__title {
+    font-size: 3rem; /* Aumentar el tamaño de la fuente para el título */
+  }
+
+  .BoxInputImage__section_input {
+    padding: 30px 0;
+  }
+
+  .BoxInputImage__button_input, 
+  .BoxInputImage__button {
+    font-size: 1.4rem; /* Ajustar el tamaño de la fuente para los botones */
+    padding: 14px 20px;
+  }
+
+  .BoxInputImage__icon {
+    width: 24px;
+    height: 24px;
+  }
+
+  .BoxInputImage__text_submit {
+    font-size: 0.9rem; /* Ajustar el tamaño de la fuente para el texto */
+  }
+
+  .BoxInputImage__fileDetails {
+    font-size: 1.2rem; /* Ajustar el tamaño de la fuente para los detalles del archivo */
+  }
+
+  .BoxInputImage__text {
+    font-size: 1rem; /* Ajustar el tamaño de la fuente para el texto del pie de página */
+  }
+   .BoxInputImage__button_input {
+    font-size: 0.9rem;
+  }
+
+  
+
+}
+
+/* Media queries para pantallas grandes (laptops y escritorios) */
+@media (min-width: 1762px) {
+  .BoxInputImage__container {
+    width: 80%; /* Ajustar el ancho para pantallas grandes */
+  }
+
+  .BoxInputImage__title {
+    font-size: 3rem; /* Aumentar el tamaño de la fuente para el título */
+  }
+
+  .BoxInputImage__section_input {
+    padding: 30px 0;
+  }
+
+  .BoxInputImage__button_input, 
+  .BoxInputImage__button {
+    font-size: 1.4rem; /* Ajustar el tamaño de la fuente para los botones */
+    padding: 14px 20px;
+  }
+
+  .BoxInputImage__icon {
+    width: 24px;
+    height: 24px;
+  }
+
+  .BoxInputImage__text_submit {
+    font-size: 0.9rem; /* Ajustar el tamaño de la fuente para el texto */
+  }
+
+  .BoxInputImage__fileDetails {
+    font-size: 1.2rem; /* Ajustar el tamaño de la fuente para los detalles del archivo */
+  }
+
+  .BoxInputImage__text {
+    font-size: 1rem; /* Ajustar el tamaño de la fuente para el texto del pie de página */
+  }
+   .BoxInputImage__button_input {
+    font-size: 0.9rem;
+  }
+
+  
+
+}
+
+
+
+/* Media queries para pantallas grandes (laptops y escritorios) */
+@media (max-width: 1954px) {
+  .BoxInputImage__container {
+    width: 80%; /* Ajustar el ancho para pantallas grandes */
+    
+  }
+
+  .BoxInputImage__title {
+    font-size: 3rem; /* Aumentar el tamaño de la fuente para el título */
+  }
+
+  .BoxInputImage__section_input {
+    padding: 30px 0;
+  }
+
+  .BoxInputImage__button_input, 
+  .BoxInputImage__button {
+    font-size: 1.4rem; /* Ajustar el tamaño de la fuente para los botones */
+    padding: 14px 20px;
+  }
+
+  .BoxInputImage__icon {
+    width: 24px;
+    height: 24px;
+  }
+
+  .BoxInputImage__text_submit {
+    font-size: 0.9rem; /* Ajustar el tamaño de la fuente para el texto */
+  }
+
+  .BoxInputImage__fileDetails {
+    font-size: 1.2rem; /* Ajustar el tamaño de la fuente para los detalles del archivo */
+  }
+
+  .BoxInputImage__text {
+    font-size: 1rem; /* Ajustar el tamaño de la fuente para el texto del pie de página */
+  }
+   .BoxInputImage__button_input {
+    font-size: 0.9rem;
+  }
+
+  
+
 }

@@ -6,6 +6,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+   transition: all 0.3s ease-in-out;
 }
 
 .ImageAfterBefore__start {
@@ -57,63 +58,65 @@
   left: var(--slider-position, 50%);
 }
 
-/* Media Queries para dispositivos móviles en ImageAfterBefore.module.css */
+/* ImageAfterBefore.module.css - Estilos base y media queries mejorados */
+
+.ImageAfterBefore__container {
+  /* ... tus estilos existentes ... */
+  /* Transiciones suaves para todos los cambios de estilo */
+  transition: all 0.3s ease-in-out;
+}
+
+.ImageAfterBefore__start,
+.ImageAfterBefore__end,
+.ImageAfterBefore__beforeAfter,
+.ImageAfterBefore__image__before,
+.ImageAfterBefore__image__after,
+.ImageAfterBefore__slider {
+  /* Aplicar transiciones a todos los elementos relevantes */
+  transition: all 0.3s ease-in-out;
+}
 
 @media screen and (max-width: 768px) {
-   .ImageAfterBefore__container {
+  .ImageAfterBefore__container {
     flex-direction: column;
   }
 
-
-
-
   .ImageAfterBefore__beforeAfter {
-    width: 100%; /* Hacer que el contenedor ocupe todo el ancho disponible */
-    height: auto; /* Ajustar la altura automáticamente */
+    width: 100%;
+    height: auto;
   }
 
   .ImageAfterBefore__image__before,
   .ImageAfterBefore__image__after {
-    max-width: 100%; /* Asegurar que las imágenes no desborden el contenedor */
-    max-height: auto; /* Ajustar la altura de forma automática */
-    object-fit: contain; /* Cambiar a 'contain' para asegurar que las imágenes se muestren completas */
+    object-fit: contain;
   }
 
   .ImageAfterBefore__slider {
-    width: 3px; /* Ajustar el grosor del deslizador para pantallas más pequeñas */
+    width: 3px;
   }
 }
 
-/* Media Query para dispositivos muy pequeños (menos de 480px) */
+/* Para dispositivos muy pequeños (smartphones) */
 @media screen and (max-width: 480px) {
-
-   .ImageAfterBefore__container {
-    flex-direction: column;
+  .ImageAfterBefore__container {
+    /* Mantener la dirección de la columna, pero puede ajustar otros estilos si es necesario */
   }
 
-
-
-
   .ImageAfterBefore__beforeAfter {
-    width: 100%; /* Hacer que el contenedor de las imágenes ocupe todo el ancho disponible */
-    height: auto; /* Ajustar la altura automáticamente para mantener la proporción */
+    /* Ajustes para el tamaño y la orientación de las imágenes */
   }
 
   .ImageAfterBefore__image__before,
   .ImageAfterBefore__image__after {
-    max-width: 100%; /* Asegurar que las imágenes no desborden el contenedor */
-    max-height: auto; /* Ajustar la altura de forma automática */
-    object-fit: contain; /* Cambiar a 'contain' para asegurar que las imágenes se muestren completas */
+    /* Ajustes para la visualización de las imágenes */
   }
 
   .ImageAfterBefore__slider {
-    width: 3px; /* Ajustar el grosor del deslizador para que sea más adecuado para pantallas pequeñas */
-    top: var(--slider-position, 50%); /* Ajustar la posición del deslizador para orientación vertical */
+    /* Ajustar el deslizador para un manejo más intuitivo en pantallas táctiles */
+    top: var(--slider-position, 50%);
     left: 0;
     right: 0;
-    height: 3px; /* Cambiar a una altura fija para el deslizador horizontal */
-    cursor: ns-resize; /* Cambiar el cursor para indicar el deslizamiento vertical */
+    height: 3px;
+    cursor: ns-resize;
   }
-
-  /* Aquí puedes agregar más ajustes de estilo para otros elementos si es necesario */
 }

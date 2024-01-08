@@ -1,4 +1,4 @@
-
+/* Estilos base para HomeTitle */
 
 .HomeTitle__header {
   margin: 20px 0;
@@ -6,24 +6,21 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  transition: all 0.3s ease-in-out; /* Transición suave para ajustes de margen */
 }
 
 .HomeTitle__title {
   font-size: 3.1rem;
   color: #F2F2F2; /* Color de texto oscuro */
   text-align: start;
-    max-width: 400px;
-    font-weight: 400;
-
+  max-width: 400px;
+  font-weight: 400;
+  transition: font-size 0.3s ease-in-out, max-width 0.3s ease-in-out, text-align 0.3s ease-in-out; /* Transiciones suaves para tamaño de fuente, ancho máximo y alineación del texto */
 }
-
-
 
 .HomeTitle__title__span {
-  color:#BF9F78; /* Un color destacado para la parte "fotos" */
+  color: #BF9F78; /* Un color destacado para la parte "fotos" */
 }
-
-
 
 /* Media queries para pantallas pequeñas (smartphones) */
 @media (max-width: 600px) {
@@ -38,10 +35,8 @@
   }
 
   .HomeTitle__title__span {
-    color: #BF9F78; /* Mantener el color destacado para la parte especial del título */
+    /* No hay cambios específicos para este elemento en smartphones */
   }
-
-  /* Aquí puedes agregar más ajustes de estilo para otros elementos si es necesario */
 }
 
 /* Media queries para tablets */
@@ -57,8 +52,8 @@
   }
 
   .HomeTitle__title__span {
-    color: #BF9F78; /* Mantener el color destacado para la parte especial del título */
+    /* No hay cambios específicos para este elemento en tablets */
   }
-
-  /* Aquí puedes agregar más ajustes de estilo para otros elementos si es necesario */
 }
+
+/* Considera agregar puntos de ruptura adicionales para pantallas más grandes si es necesario */

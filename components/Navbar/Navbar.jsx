@@ -1,14 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import styles from './Navbar.module.css';
-import { FaShoppingCart } from "react-icons/fa";
-import { BsSearchHeartFill } from "react-icons/bs";
 import { GrMoreVertical } from "react-icons/gr";
-import { FaUserLarge } from "react-icons/fa6";
-import { FaMicrophoneAlt } from "react-icons/fa";
-import { MdOutlineEmojiEvents } from "react-icons/md";
-import { BsCoin } from "react-icons/bs";
-
 
 
 

@@ -1,7 +1,4 @@
-/* Hero.module.css */
-
-.Hero__container_master
-{
+.Hero__container_master {
   text-align: center;
   padding: 20px;
   color: #F2F2F2; /* Color de texto principal */
@@ -9,91 +6,31 @@
   justify-content: center;
   align-items: center;
   margin-top: 3%;
-  
+ 
 }
+
 .Hero__container {
   text-align: center;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   width: 60%;
-  
-  
+  max-width: 1350px;
 }
-
-
-.BoxInputImage__text{
- 
-  font-size: 6px;
-  margin: auto;
-  margin-top: 5%;
-  margin-bottom: 5%;
-  padding: 10px;
-  border-radius: 14px;
-  background-color: #F2F2F2;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
-  padding: 10px 40px;
-
-  
-  
-}
-
-
 
 .Hero__start {
   flex: 1;
   justify-content: center;
   align-items: center;
-    
-
 }
 
 .Hero__end {
   flex: 1;
   justify-content: center;
   align-items: center;
-  transform:translateY(95px)
-
-
+  transform:translateY(95px);
 }
 
-.Hero__beforeAfter {
-  display: flex;
-  position: relative; /* Importante para posicionar las imágenes absolutamente dentro de este contenedor */
-  margin: auto; /* Centra el contenedor */
-}
-
-.Hero__image__before,
-.Hero__image__after {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  max-width: 100%;
-  max-height: 100%;
-  border-radius: 14px;
-}
-
-.Hero__image__after {
-  top: 0;
-  left: 0;
-  clip-path: inset(0 0 0 var(--slider-position, 50%)); /* Ajuste para el efecto del deslizador */
-}
-
-.Hero__slider {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  width: 5px; /* Ajusta el grosor de la línea del deslizador */
-  background-color:#BF9F78; /* Color del deslizador */
-  cursor: ew-resize;
-  left: var(--slider-position, 50%);
-}
-/* CSS Media Queries para dispositivos móviles */
 /* CSS Media Queries para dispositivos móviles y rangos de pantalla específicos */
 
 /* Para dispositivos móviles (hasta 768px) */
@@ -110,32 +47,9 @@
 
   .Hero__start,
   .Hero__end {
-    flex: 1 1 auto;
+    flex: 1;
     margin: 10px 0;
     transform: translateY(0);
-  }
-
-  .Hero__beforeAfter {
-    flex-direction: column;
-    height: auto;
-  }
-
-  .Hero__slider {
-    top: var(--slider-position, 50%);
-    left: 0;
-    right: 0;
-    height: 5px;
-    width: 100%;
-    cursor: ns-resize;
-  }
-
-  .Hero__image__after {
-    clip-path: inset(var(--slider-position, 50%) 0 0 0);
-  }
-
-  .BoxInputImage__text {
-    font-size: 14px; /* Aumentar el tamaño de fuente para mejor legibilidad en dispositivos móviles */
-    padding: 15px 20px;
   }
 }
 
@@ -150,36 +64,19 @@
     width: 100%;
   }
 
-
   .Hero__end {
     flex: 1;
     margin: 10px 0;
-    transform: translateY(0);
+    transform:translateY(0px);
   }
 
   .Hero__start {
-  flex: 1;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  margin: 10px 0;
-    
-
-}
-
-  .Hero__beforeAfter {
-    /* Ajustes adicionales si son necesarios */
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 10px 0;
   }
-
-  .Hero__slider {
-    /* Ajustes para el deslizador si son necesarios */
-  }
-
-  .Hero__image__after {
-    /* Ajustes para .Hero__image__after si son necesarios */
-  }
-
-  /* Ajustes adicionales para otros elementos si son necesarios */
 }
 
 /* Para dispositivos muy pequeños (hasta 480px) */
@@ -187,11 +84,4 @@
   .Hero__container_master {
     padding: 10px;
   }
-
-  .BoxInputImage__text {
-    font-size: 12px;
-    padding: 10px 15px;
-  }
-
-  /* Ajustes adicionales para pantallas muy pequeñas si son necesarios */
 }
