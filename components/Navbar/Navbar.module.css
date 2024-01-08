@@ -1,0 +1,149 @@
+/* Estilo general de la navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.2vw 2vw;
+  align-items: center;
+  border-radius: 14px;
+  max-width: 100%;
+  margin: 14px 0;
+}
+
+/* Secciones de la navbar: Elementos del Bloque navbar */
+.navbar__section--start, .navbar__section--end {
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+
+
+.navbar__navigation {
+  display: flex;
+  align-items: center;
+  width: 65%;
+  justify-content: center;
+  padding: 1rem 2.5rem;
+  
+  
+
+}
+
+ .navbar__logo {
+  display: flex;
+  align-items: center;
+  width: 35%;
+
+}
+
+.navbar__icons {
+  display: flex;
+  width: 35%;
+  justify-content: flex-end;
+
+
+}
+
+.navbar__cta-button {
+  background-color:#BF9F78; /* A pleasant blue */
+  color: #26211F;
+  border: none;
+  border-radius: 4px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  outline: none;
+  font-size: 1rem;
+  padding: 0.8rem 1rem;
+  margin: 0 68px 0 0;
+
+}
+
+.navbar__cta{
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: flex-start;
+  padding: 5px 0;
+  margin: 0 0 0 128px;
+}
+
+
+
+/* Ítems de navegación: Modificador del Elemento navbar__navigation */
+.navbar__item {
+  flex: 1;
+  font-size: 1.2rem;
+  color: #F2F2F2;
+  cursor: pointer;
+  transition: color 0.3s ease;
+  text-align: center;
+  text-decoration: none;
+  margin: 0 0 0 2vh;
+  
+}
+.navbar__item a {
+
+  text-decoration: none;
+  
+}
+.navbar__item:hover {
+  color:#BF9F78;
+}
+
+/* Estilos para los iconos en la navbar */
+.navbar__icon {
+  color: #F2F2F2;
+  cursor: pointer;
+  margin: 0 0 0 1vh;
+  font-size: 1.5rem;
+
+}
+
+.navbar__icon:hover {
+  color:#BF9F78;
+  transition-duration: 0.3s;
+}
+
+/* Estilos para los íconos: Elementos del Bloque navbar */
+.navbar__cart, .navbar__login {
+  margin-left: 50px;
+  color: #F2F2F2;
+  flex: 1;
+}
+
+
+.navbar__user {
+  color: #F2F2F2;
+  display: flex;
+  align-items: center;
+  transform: translateX(10px);
+
+
+}
+
+.navbar__cart:hover, .navbar__user:hover {
+  color:#BF9F78;
+  transition-duration: 0.3s;
+}
+
+/* Media Queries para ajustes responsivos */
+@media only screen and (max-width: 1550px) {
+  .navbar__navigation, .navbar__cart {
+    display: none;
+  }
+  .navbar__logo {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .navbar__logo {
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .navbar__logo {
+    width: 50%;
+  }
+}

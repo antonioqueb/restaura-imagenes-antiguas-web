@@ -1,0 +1,52 @@
+
+
+.HomeTitle__header {
+  margin: 20px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.HomeTitle__title {
+  font-size: 3.1rem;
+  color: #F2F2F2; /* Color de texto oscuro */
+  text-align: start;
+    max-width: 400px;
+    font-weight: 400;
+
+}
+
+
+
+.HomeTitle__title__span {
+  color:#BF9F78; /* Un color destacado para la parte "fotos" */
+}
+
+
+
+/* Media queries para pantallas pequeñas (smartphones) */
+@media (max-width: 600px) {
+
+
+  .HomeTitle__title {
+    font-size: 2.3rem;
+    margin: 2vh 0;
+  }
+
+
+
+  
+  /* ... otros ajustes para smartphones ... */
+}
+
+/* Media queries para tablets */
+@media (min-width: 601px) and (max-width: 1024px) {
+ 
+  .HomeTitle__title {
+    font-size: 3.5rem;
+  }
+
+
+  /* ... otros ajustes para tablets ... */
+}
