@@ -18,8 +18,8 @@ const NavbarComponent = () => (
       <div className={styles['navbar__logo']}>
         <Link href="/">
           {/* Modificador: navbar__logo-text */}
-          {/*<Image src="/logo-b.png" alt="Logo" width={90} height={50} /> */}
-          <h2 className={styles['navbar__logo-text']}>Tu Logo</h2>
+          <Image src="/logo-b.png" alt="Logo" width={90} height={50} /> 
+          
         </Link>
       </div>
       
