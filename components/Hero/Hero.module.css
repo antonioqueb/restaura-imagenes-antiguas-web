@@ -93,3 +93,105 @@
   cursor: ew-resize;
   left: var(--slider-position, 50%);
 }
+/* CSS Media Queries para dispositivos móviles */
+/* CSS Media Queries para dispositivos móviles y rangos de pantalla específicos */
+
+/* Para dispositivos móviles (hasta 768px) */
+@media screen and (max-width: 768px) {
+  .Hero__container_master {
+    flex-direction: column;
+    margin-top: 5%;
+  }
+
+  .Hero__container {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .Hero__start,
+  .Hero__end {
+    flex: 1 1 auto;
+    margin: 10px 0;
+    transform: translateY(0);
+  }
+
+  .Hero__beforeAfter {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .Hero__slider {
+    top: var(--slider-position, 50%);
+    left: 0;
+    right: 0;
+    height: 5px;
+    width: 100%;
+    cursor: ns-resize;
+  }
+
+  .Hero__image__after {
+    clip-path: inset(var(--slider-position, 50%) 0 0 0);
+  }
+
+  .BoxInputImage__text {
+    font-size: 14px; /* Aumentar el tamaño de fuente para mejor legibilidad en dispositivos móviles */
+    padding: 15px 20px;
+  }
+}
+
+/* Para pantallas intermedias (776px a 1845px) */
+@media screen and (min-width: 746px) and (max-width: 1586px) {
+  .Hero__container_master {
+    flex-direction: column;
+  }
+
+  .Hero__container {
+    flex-direction: column;
+    width: 100%;
+  }
+
+
+  .Hero__end {
+    flex: 1;
+    margin: 10px 0;
+    transform: translateY(0);
+  }
+
+  .Hero__start {
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 10px 0;
+    
+
+}
+
+  .Hero__beforeAfter {
+    /* Ajustes adicionales si son necesarios */
+  }
+
+  .Hero__slider {
+    /* Ajustes para el deslizador si son necesarios */
+  }
+
+  .Hero__image__after {
+    /* Ajustes para .Hero__image__after si son necesarios */
+  }
+
+  /* Ajustes adicionales para otros elementos si son necesarios */
+}
+
+/* Para dispositivos muy pequeños (hasta 480px) */
+@media screen and (max-width: 480px) {
+  .Hero__container_master {
+    padding: 10px;
+  }
+
+  .BoxInputImage__text {
+    font-size: 12px;
+    padding: 10px 15px;
+  }
+
+  /* Ajustes adicionales para pantallas muy pequeñas si son necesarios */
+}

@@ -27,26 +27,38 @@
 
 /* Media queries para pantallas pequeñas (smartphones) */
 @media (max-width: 600px) {
-
-
-  .HomeTitle__title {
-    font-size: 2.3rem;
-    margin: 2vh 0;
+  .HomeTitle__header {
+    margin: 10px 0; /* Reducir el margen para pantallas pequeñas */
   }
 
+  .HomeTitle__title {
+    font-size: 2rem; /* Disminuir el tamaño de la fuente para el título */
+    text-align: center; /* Centrar el texto */
+    max-width: 90%; /* Ajustar el ancho máximo */
+  }
 
+  .HomeTitle__title__span {
+    color: #BF9F78; /* Mantener el color destacado para la parte especial del título */
+  }
 
-  
-  /* ... otros ajustes para smartphones ... */
+  /* Aquí puedes agregar más ajustes de estilo para otros elementos si es necesario */
 }
 
 /* Media queries para tablets */
 @media (min-width: 601px) and (max-width: 1024px) {
- 
-  .HomeTitle__title {
-    font-size: 3.5rem;
+  .HomeTitle__header {
+    margin: 15px 0; /* Ajustar el margen para tablets */
   }
 
+  .HomeTitle__title {
+    font-size: 2.8rem; /* Aumentar el tamaño de la fuente para el título */
+    text-align: center; /* Centrar el texto */
+    max-width: 95%; /* Ajustar el ancho máximo */
+  }
 
-  /* ... otros ajustes para tablets ... */
+  .HomeTitle__title__span {
+    color: #BF9F78; /* Mantener el color destacado para la parte especial del título */
+  }
+
+  /* Aquí puedes agregar más ajustes de estilo para otros elementos si es necesario */
 }

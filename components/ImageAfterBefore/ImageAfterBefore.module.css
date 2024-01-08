@@ -56,3 +56,64 @@
   cursor: ew-resize;
   left: var(--slider-position, 50%);
 }
+
+/* Media Queries para dispositivos móviles en ImageAfterBefore.module.css */
+
+@media screen and (max-width: 768px) {
+   .ImageAfterBefore__container {
+    flex-direction: column;
+  }
+
+
+
+
+  .ImageAfterBefore__beforeAfter {
+    width: 100%; /* Hacer que el contenedor ocupe todo el ancho disponible */
+    height: auto; /* Ajustar la altura automáticamente */
+  }
+
+  .ImageAfterBefore__image__before,
+  .ImageAfterBefore__image__after {
+    max-width: 100%; /* Asegurar que las imágenes no desborden el contenedor */
+    max-height: auto; /* Ajustar la altura de forma automática */
+    object-fit: contain; /* Cambiar a 'contain' para asegurar que las imágenes se muestren completas */
+  }
+
+  .ImageAfterBefore__slider {
+    width: 3px; /* Ajustar el grosor del deslizador para pantallas más pequeñas */
+  }
+}
+
+/* Media Query para dispositivos muy pequeños (menos de 480px) */
+@media screen and (max-width: 480px) {
+
+   .ImageAfterBefore__container {
+    flex-direction: column;
+  }
+
+
+
+
+  .ImageAfterBefore__beforeAfter {
+    width: 100%; /* Hacer que el contenedor de las imágenes ocupe todo el ancho disponible */
+    height: auto; /* Ajustar la altura automáticamente para mantener la proporción */
+  }
+
+  .ImageAfterBefore__image__before,
+  .ImageAfterBefore__image__after {
+    max-width: 100%; /* Asegurar que las imágenes no desborden el contenedor */
+    max-height: auto; /* Ajustar la altura de forma automática */
+    object-fit: contain; /* Cambiar a 'contain' para asegurar que las imágenes se muestren completas */
+  }
+
+  .ImageAfterBefore__slider {
+    width: 3px; /* Ajustar el grosor del deslizador para que sea más adecuado para pantallas pequeñas */
+    top: var(--slider-position, 50%); /* Ajustar la posición del deslizador para orientación vertical */
+    left: 0;
+    right: 0;
+    height: 3px; /* Cambiar a una altura fija para el deslizador horizontal */
+    cursor: ns-resize; /* Cambiar el cursor para indicar el deslizamiento vertical */
+  }
+
+  /* Aquí puedes agregar más ajustes de estilo para otros elementos si es necesario */
+}

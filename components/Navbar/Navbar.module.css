@@ -128,7 +128,7 @@
 
 /* Media Queries para ajustes responsivos */
 @media only screen and (max-width: 1550px) {
-  .navbar__navigation, .navbar__cart {
+  .navbar__navigation, .navbar__cart, .navbar__cta-button{
     display: none;
   }
   .navbar__logo {

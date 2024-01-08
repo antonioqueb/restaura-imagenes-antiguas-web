@@ -189,49 +189,78 @@
 /* Media queries para pantallas pequeñas (smartphones) */
 @media (max-width: 600px) {
   .BoxInputImage__container {
-    padding: 30px;
-    margin-top: 100px;
-  }
-
-  .BoxInputImage__subcontainer {
     padding: 20px;
+    width: 90%; /* Ajustar el ancho para pantallas pequeñas */
+    margin-top: 20px;
   }
 
   .BoxInputImage__title {
-    font-size: 2.3rem;
-    margin: 2vh 0;
+    font-size: 2rem; /* Disminuir el tamaño de la fuente para el título */
   }
 
-
-
-  .BoxInputImage__section_input, .BoxInputImage__input {
-    width: 100%;
+  .BoxInputImage__section_input {
+    padding: 20px 0;
   }
 
-  .BoxInputImage__text_submit, .BoxInputImage__button, .BoxInputImage__button_input {
-    font-size: 1.2rem;
+  .BoxInputImage__button_input, 
+  .BoxInputImage__button {
+    font-size: 1rem; /* Reducir el tamaño de la fuente para los botones */
+    padding: 10px 15px;
   }
 
-  /* ... otros ajustes para smartphones ... */
+  .BoxInputImage__icon {
+    width: 20px;
+    height: 20px;
+  }
+
+  .BoxInputImage__text_submit {
+    font-size: 0.9rem; /* Reducir el tamaño de la fuente para el texto */
+  }
+
+  .BoxInputImage__fileDetails {
+    font-size: 0.9rem; /* Reducir el tamaño de la fuente para los detalles del archivo */
+  }
+
+  .BoxInputImage__text {
+    font-size: 0.8rem; /* Reducir el tamaño de la fuente para el texto del pie de página */
+  }
 }
 
 /* Media queries para tablets */
 @media (min-width: 601px) and (max-width: 1024px) {
   .BoxInputImage__container {
     padding: 40px;
+    width: 80%; /* Ajustar el ancho para tablets */
   }
 
   .BoxInputImage__title {
-    font-size: 3.5rem;
+    font-size: 2.5rem; /* Aumentar el tamaño de la fuente para el título */
   }
 
-  .BoxInputImage__section_input, .BoxInputImage__input {
-    width: 80%;
+  .BoxInputImage__section_input {
+    padding: 30px 0;
   }
 
-  .BoxInputImage__text_submit, .BoxInputImage__button, .BoxInputImage__button_input {
-    font-size: 1.4rem;
+  .BoxInputImage__button_input, 
+  .BoxInputImage__button {
+    font-size: 1.2rem; /* Ajustar el tamaño de la fuente para los botones */
+    padding: 12px 18px;
   }
 
-  /* ... otros ajustes para tablets ... */
+  .BoxInputImage__icon {
+    width: 22px;
+    height: 22px;
+  }
+
+  .BoxInputImage__text_submit {
+    font-size: 1rem; /* Ajustar el tamaño de la fuente para el texto */
+  }
+
+  .BoxInputImage__fileDetails {
+    font-size: 1rem; /* Ajustar el tamaño de la fuente para los detalles del archivo */
+  }
+
+  .BoxInputImage__text {
+    font-size: 0.9rem; /* Ajustar el tamaño de la fuente para el texto del pie de página */
+  }
 }
