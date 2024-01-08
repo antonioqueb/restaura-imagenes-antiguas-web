@@ -6,7 +6,7 @@ services:
       dockerfile: Dockerfile.dev
    
     ports:
-      - '84:80'
+      - '3000:3000'
 
     volumes:
       - /app/node_modules
@@ -18,7 +18,7 @@ services:
       dockerfile: Dockerfile.prod
 
     ports:
-      - '85:8080'
+      - '4000:4000'
 
     volumes:
       - /app/node_modules

@@ -6,14 +6,14 @@ WORKDIR /app
 
 # Copia los archivos de dependencias de Node.js
 COPY package*.json ./
-COPY . .
+COPY ./ ./
 
 RUN npm install
 
 RUN npm run build
 
 # Expone el puerto 80
-EXPOSE 8080
+EXPOSE 3000
 
 # Inicia la aplicación
 CMD ["npm", "run", "start"]
