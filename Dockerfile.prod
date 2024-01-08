@@ -6,7 +6,7 @@ WORKDIR /app
 
 # Copia los archivos de dependencias de Node.js
 COPY package*.json ./
-COPY ./ ./
+COPY . .
 
 RUN npm install
 
