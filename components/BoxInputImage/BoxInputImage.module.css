@@ -1,23 +1,21 @@
 /* BoxInputImage.module.css */
+
+
 .BoxInputImage__container {
-    text-align: center;
-    color: #F2F2F2; /* Color de texto principal */
-    border: 2px dashed #BF9F78 ; /* Grosor de línea aumentado */
-    justify-content: center;
-    align-items: center;
-    border-radius: 14px;
-    padding: 80px 90px ;
-    display: flex;
-    flex-direction: column;
-    background-color: #1F1F1F; /* Color de fondo */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Sombra */
-    width: 74%;
-    height: 100%;
-    margin: 0 auto;
-
-
-
-
+  text-align: center;
+  color: #F2F2F2; /* Color de texto principal */
+  border: 2px dashed #BF9F78; /* Grosor de línea aumentado */
+  justify-content: center;
+  align-items: center;
+  border-radius: 14px;
+  padding: 80px 90px;
+  display: flex;
+  flex-direction: column;
+  background-color: #1F1F1F; /* Color de fondo */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Sombra */
+  width: 74%;
+  height: 100%;
+  margin: 0 auto;
 }
 
 
@@ -29,12 +27,12 @@
   margin-top: 5%;
   margin-bottom: 5%;
   border-radius: 14px;
-  max-width: 100%;
+  padding: 0 18px;
 }
 
 .BoxInputImage__text{
  
-  font-size: 14px;
+  font-size: 12px;
   margin: auto;
   margin-bottom: 5%;
   padding: 5px;
@@ -44,7 +42,7 @@
   align-items: center;
   flex-direction: column;
   box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
-  padding: 10px 25px;
+  padding: 10px 26px;
 
   
   

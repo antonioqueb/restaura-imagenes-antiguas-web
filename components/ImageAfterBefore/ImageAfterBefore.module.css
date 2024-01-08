@@ -79,6 +79,7 @@
 @media screen and (max-width: 768px) {
   .ImageAfterBefore__container {
     flex-direction: column;
+    
   }
 
   .ImageAfterBefore__beforeAfter {
@@ -92,23 +93,25 @@
   }
 
   .ImageAfterBefore__slider {
-    width: 3px;
+   display: none;
   }
 }
 
 /* Para dispositivos muy pequeños (smartphones) */
 @media screen and (max-width: 480px) {
   .ImageAfterBefore__container {
-    /* Mantener la dirección de la columna, pero puede ajustar otros estilos si es necesario */
+    padding: 20px;
+    
   }
 
   .ImageAfterBefore__beforeAfter {
-    /* Ajustes para el tamaño y la orientación de las imágenes */
-  }
+    width: 100%;
+    height: auto;}
 
   .ImageAfterBefore__image__before,
   .ImageAfterBefore__image__after {
-    /* Ajustes para la visualización de las imágenes */
+    object-fit: contain;
+    display: none;
   }
 
   .ImageAfterBefore__slider {
