@@ -2,8 +2,8 @@
 import { useState } from 'react';
 import Image from 'next/image';
 import styles from './Hero.module.css';
-import BoxInputImage from '../BoxInputImage/BoxInputImage'; // Asegúrate de tener este import si estás usando BoxInputImage
-import ImageAfterBefore from '../ImageAfterBefore/ImageAfterBefore'; // Asegúrate de tener este import si estás usando ImageAfterBefore
+import BoxInputImage from '../BoxInputImage/BoxInputImage'; 
+import ImageAfterBefore from '../ImageAfterBefore/ImageAfterBefore';
 import HomeTitle from '../HomeTitle/HomeTitle';
 
 export const Hero = () => {
