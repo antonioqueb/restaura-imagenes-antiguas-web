@@ -24,7 +24,6 @@ export const Hero = () => {
       </div>
       <section className={styles.Hero__end}>
         <BoxInputImage />
-       
       </section>
     </div>
 
