@@ -1,12 +1,11 @@
-
 'use client';
 import React, { useState, useRef } from 'react';
 import styles from './BoxInputImage.module.css';
 import { FaImage } from "react-icons/fa";
 import HomeTitle from '../HomeTitle/HomeTitle';
 
-
 export const BoxInputImage = () => {
+  
   const [selectedFile, setSelectedFile] = useState(null);
   const fileInputRef = useRef(null);
 
@@ -39,16 +38,14 @@ export const BoxInputImage = () => {
               <FaImage className={styles.BoxInputImage__icon}/>
               Cargar imagen
             </button>
-            <p className={styles.BoxInputImage__text_submit}>o arrastra una imagen.
-
-</p>
+            <p className={styles.BoxInputImage__text_submit}>o arrastra una imagen.</p>
           </div>
           {selectedFile && (
             <div className={styles.BoxInputImage__fileDetails}>
               <span>{selectedFile.name}</span>
               <br />
               <button onClick={handleFileSubmit} className={styles.BoxInputImage__button}>
-                Restaurar Foto
+                Restaurar Foto Antigua
               </button>
             </div>
           )}
@@ -57,12 +54,11 @@ export const BoxInputImage = () => {
        
     </div>
     <div className={styles.BoxInputImage__container_footer}>
-     <p className={styles.BoxInputImage__text}>
-          Al cargar una imagen o URL, aceptas nuestras Condiciones del servicio. Esta página está protegida por hCaptcha y se pueden aplicar su Política de privacidad y sus Condiciones del servicio.
-        </p>
+     <p className={styles.BoxInputImage__text}>Al cargar una imagen, aceptas nuestras Condiciones del servicio. Esta página está protegida por hCaptcha y se pueden aplicar su Política de privacidad y sus Condiciones del servicio.</p>
     </div>
       </>
   );
+  
 };
 
 export default BoxInputImage;
