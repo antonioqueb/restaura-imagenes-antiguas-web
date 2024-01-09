@@ -1,10 +1,7 @@
-
 import styles from './HomeTitle.module.css';
 
-
 export const HomeTitle = () => {
- 
-
+    
   return (
   
         <header className={styles.HomeTitle__header}>
@@ -12,6 +9,7 @@ export const HomeTitle = () => {
           </h2>
         </header>
   );
+
 };
 
 export default HomeTitle;
