@@ -3,7 +3,7 @@
 import { useState } from 'react';
 import Image from 'next/image';
 import styles from './ImageAfterBefore.module.css';
-import BoxInputImage from '../BoxInputImage/BoxInputImage'; // Asegúrate de tener este import si estás usando BoxInputImage
+import BoxInputImage from '../BoxInputImage/BoxInputImage';
 
 export const ImageAfterBefore = () => {
   const [sliderPosition, setSliderPosition] = useState(50);
