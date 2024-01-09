@@ -3,14 +3,8 @@ import Image from "next/image";
 import styles from './Navbar.module.css';
 import { GrMoreVertical } from "react-icons/gr";
 
-
-
-
-
-
 const NavbarComponent = () => (
 
-  
   <nav className={styles.navbar}>
   
     <section className={styles['navbar__section--start']}>
