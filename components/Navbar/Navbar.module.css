@@ -10,11 +10,24 @@
 }
 
 /* Secciones de la navbar: Elementos del Bloque navbar */
-.navbar__section--start, .navbar__section--end {
-  flex: 1;
+.navbar__section--start{
+  flex: 20%;
   display: flex;
   align-items: center;
 }
+.navbar__section--end{
+  flex: 20%;
+  display: flex;
+  align-items: center;
+}
+
+.navbar__section--center {
+  flex: 60%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
 
 
 .navbar__navigation {

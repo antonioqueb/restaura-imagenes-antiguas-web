@@ -25,21 +25,18 @@
 @media screen and (max-width: 1663px) {
   .HomeTitle__title {
     font-size: 3.7rem;
-    text-align: center;
   }
 }
 
 @media screen and (max-width: 1399px) {
   .HomeTitle__title {
     font-size: 2.3rem;
-    text-align: center;
   }
 }
 
 @media screen and (max-width: 911px) {
   .HomeTitle__title {
     font-size: 1.8rem;
-    text-align: center;
   }
 }
 

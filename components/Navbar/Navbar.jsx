@@ -12,14 +12,17 @@ const NavbarComponent = () => (
       <div className={styles['navbar__logo']}>
         <Link href="/">
           {/* Modificador: navbar__logo-text */}
-          <Image src="/logo-b.png" alt="Logo" width={90} height={90} /> 
+          <Image src="/logo-b.png" alt="Logo" width={60} height={60} /> 
           
         </Link>
       </div>
-      
+   
+    </section>
+    <section className={styles['navbar__section--center']}>
+         
       {/* Elemento: navbar__navigation */}
       <div className={styles['navbar__navigation']}>
-        <Link href="/explorar">
+        <Link href="/explorar" >
           {/* Modificador: navbar__item */}
           <span className={styles['navbar__item']}>¿Cómo se usa?</span>
         </Link>
@@ -28,6 +31,10 @@ const NavbarComponent = () => (
         </Link>
         <Link href="/colaborar">
           <span className={styles['navbar__item']}>Nosotros</span>
+          
+        </Link>
+        <Link href="/colaborar">
+          <span className={styles['navbar__item']}>Blog</span>
         </Link>
       </div>
     </section>
@@ -36,13 +43,8 @@ const NavbarComponent = () => (
 
       {/* Elemento: Boton call to action */}
       <div className={styles['navbar__cta']}>
-        <Link href="/login">
-          <button className={styles['navbar__cta-button']}>Iniciar sesión</button>
-          
-        </Link>
-        <Link href="/register">
-          <button className={styles['navbar__cta-button']}>Registrarse</button>
-        </Link>
+        
+       
       </div>
       <div className={styles['navbar__icons']}>
       <div className={styles['navbar__user']}>
