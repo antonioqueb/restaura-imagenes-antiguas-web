@@ -5,7 +5,7 @@
   justify-content: center;
   align-items: center;
   width: 100%; /* Establece el ancho del contenedor */
-  min-height: 90vh; /* Establece la altura mínima del contenedor */
+  min-height: 90%; /* Establece la altura mínima del contenedor */
 }
 
 .Hero__container {
@@ -15,18 +15,18 @@
   align-items: stretch; /* Cambiado de center a stretch */
   width: 80%;
   max-width: 1450px;
-  min-height: 70vh;
 }
 
 .Hero__start, .Hero__end {
   flex: 1; /* Ambos ocuparán igual espacio */
   display: flex; /* Usa flexbox para alinear internamente */
   justify-content: center; /* Alinea horizontalmente */
-  min-height: 50vh; /* Altura mínima igual al contenedor */
+  min-height: 30vw; /* Altura mínima igual al contenedor */
   flex-direction: column; /* Elementos en columna */
 }
 
 .Hero__start {
+  flex: 1;
   flex-direction: column;
   align-items: center; /* Alinea verticalmente en el centro */
   padding: 0 35px; /* Añade un poco de espacio alrededor del texto */
@@ -38,6 +38,7 @@
 }
 
 .Hero__end {
+  flex: 1;
   flex-direction: column;
   margin-top: auto;
   padding: 0 35px; /* Añade un poco de espacio alrededor del texto */
@@ -45,10 +46,22 @@
  
 }
 
-@media screen and (max-width: 795px) {
- .Hero__container {
- 
-  flex-direction: column; /* Elementos en columna */
+@media screen and (max-width: 755px) {
+  .Hero__container {
+    flex-direction: column; /* Elementos en columna */
+    align-items: center;
+  }
+  
+  .Hero__start, .Hero__end {
+    min-height: 0; /* Elimina la altura mínima */
+  }
+  
+  .Hero__start {
+    padding: 0 35px; /* Añade un poco de espacio alrededor del texto */
+  }
+  
+  .Hero__end {
+    padding: 0 35px; /* Añade un poco de espacio alrededor del texto */
+  }
+}
 
-}
-}

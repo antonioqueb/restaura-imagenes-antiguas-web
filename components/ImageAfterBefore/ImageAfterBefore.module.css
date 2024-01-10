@@ -68,50 +68,8 @@
   transition: all 0.3s ease-in-out;
 }
 
-@media screen and (max-width: 768px) {
-  .ImageAfterBefore__container {
-    flex-direction: column;
-    
-  }
-
-  .ImageAfterBefore__beforeAfter {
-    width: 100%;
-    height: auto;
-  }
-
-  .ImageAfterBefore__image__before,
-  .ImageAfterBefore__image__after {
-    object-fit: contain;
-  }
-
-  .ImageAfterBefore__slider {
-   display: none;
-  }
-}
-
-/* Para dispositivos muy pequeños (smartphones) */
-@media screen and (max-width: 480px) {
-  .ImageAfterBefore__container {
-    padding: 20px;
-    
-  }
-
-  .ImageAfterBefore__beforeAfter {
-    width: 100%;
-    height: auto;}
-
-  .ImageAfterBefore__image__before,
-  .ImageAfterBefore__image__after {
-    object-fit: contain;
-    display: none;
-  }
-
-  .ImageAfterBefore__slider {
-    /* Ajustar el deslizador para un manejo más intuitivo en pantallas táctiles */
-    top: var(--slider-position, 50%);
-    left: 0;
-    right: 0;
-    height: 3px;
-    cursor: ns-resize;
-  }
+.ImageAfterBefore__image__before {
+  /* ... tus estilos existentes ... */
+  /* Transiciones suaves para todos los cambios de estilo */
+  transition: all 0.3s ease-in-out;
 }
