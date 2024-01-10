@@ -1,130 +1,64 @@
 /* BoxInputImage.module.css */
 
-
+/* Inicio Principal Container */
 .BoxInputImage__container {
-  text-align: center;
-  color: #F2F2F2; /* Color de texto principal */
-  border: 2px dashed #BF9F78; /* Grosor de línea aumentado */
+  border: 6px dotted #BF9F78; /* Grosor de línea aumentado */
   justify-content: center;
   align-items: center;
   border-radius: 14px;
-  padding: 80px 90px;
   display: flex;
   flex-direction: column;
   background-color: #1F1F1F; /* Color de fondo */
-  width: 74%;
-  height: 100%;
-  margin: 0 auto;
-    -webkit-box-shadow: inset 0px 0px 10px 0px rgba(0,0,0,0.75);
-
-}
-
-
-.BoxInputImage__container_footer{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  margin-top: 5%;
-  margin-bottom: 5%;
-  border-radius: 14px;
-  padding: 0 18px;
-}
-
-.BoxInputImage__text{
- 
-  font-size: 12px;
-  margin: auto;
-  margin-bottom: 5%;
-  padding: 5px;
-  border-radius: 14px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  padding: 10px 26px;
-
-  
-  
-}
-
-.BoxInputImage__header {
-  margin-bottom: 30px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-
-.BoxInputImage__title {
-  font-size: 3.2rem;
-  color: #F2F2F2; /* Color de texto oscuro */
-  margin: 1vh 0 6vh 0;
-}
-
-.BoxInputImage__icon {
-  width: 24px; /* Ajusta según sea necesario */
-  height: 24px; /* Ajusta según sea necesario */
-  margin-right: 10px; /* Espacio entre el icono y el texto */
-}
-
-
-
-.BoxInputImage__title__span {
-  color:#BF9F78; /* Un color destacado para la parte "fotos" */
-}
-
-.BoxInputImage__content {
-  margin-top: 20px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.BoxInputImage__input {
-
-  width: 65%;
-  border-radius: 14px;
- 
-   opacity: 0;
-}
-
-.BoxInputImage__section_input {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  border-radius: 14px;
-  padding: 60px 0 40px 0;
   width: 100%;
-  font-size: 0.5rem;
-  height: 100%;
-  
-  
+  height: 450px;
 
-  /* Truco para aumentar el espacio entre las líneas */
 }
 
 
-.BoxInputImage__text_submit {
-  font-size: 1rem;
-  color: #F2F2F2; /* Color de texto oscuro */
-  margin: 3vh 0;
+
+
+
+.BoxInputImage__button_input {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #BF9F78;
+  color: rgb(0, 0, 0); /* Color de texto para el botón */
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 1.4rem;
+  border-radius: 14px; /* Bordes redondeados para el botón */
+  transition: background-color 0.3s ease; /* Transición suave al cambiar de color */
+  margin: 2vh 0;
+  font-weight: 400;
+
+  
+
+
 }
+.BoxInputImage__icon {
+  font-size: 2rem;
+  margin-right: 10px;
+  color: #2b1a06;
+  align-items: center;
+  justify-content: center;
+}
+
+
 
 .BoxInputImage__fileDetails {
   margin-top: 20px;
   padding: 10px;
   display: inline-block;
   border-radius: 14px;
+
 }
 
 
-
 .BoxInputImage__button {
-  background-color:#BF9F78; /* Color de fondo para el botón */
-  color: rgb(31, 31, 31); /* Color de texto para el botón */
+  background-color:#c5c5c5; /* Color de fondo para el botón */
+  color: rgb(0, 0, 0); /* Color de texto para el botón */
   border: none;
   padding: 10px 20px;
   cursor: pointer;
@@ -133,225 +67,60 @@
   transition: background-color 0.3s ease; /* Transición suave al cambiar de color */
   margin: 2vh 0;
   font-weight: 400;
-}
 
-.BoxInputImage__button_input {
-  background-color:#BF9F78; /* Color de fondo */
-  color: #000000; /* Color del texto */
-  border: none;
-  padding: 12px 20px;
-  cursor: pointer;
-  font-size: 1.4rem;
-  border-radius: 5px;
-  display: inline-flex; /* Para alinear el icono y el texto */
-  align-items: center; /* Centra verticalmente el icono con el texto */
-  justify-content: center; /* Centra horizontalmente */
-  transition: background-color 0.3s ease;
 }
 
 
 
-.BoxInputImage__button:hover {
-  background-color: #ffdc2c; /* Color de botón al pasar el ratón */
-}
-.BoxInputImage__uploadButton {
-  background-color: #4A90E2; /* A pleasant blue */
-  color: white;
-  padding: 12px 24px;
-  border: none;
-  border-radius: 4px;
-  font-weight: bold;
-  cursor: pointer;
-  transition: background-color 0.2s;
-  outline: none;
-  font-size: 1rem;
-}
+/* Final Principal Container */
 
-.BoxInputImage__uploadButton:hover {
-  background-color: #357ABD; /* A darker shade for hover state */
+/* Inicio Footer Container */
+
+.BoxInputImage__container_footer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+
+
 }
 
 
-  .BoxInputImage__subtitle {
-    font-size: 1.1rem;
-    border-radius: 14px;
-    padding: 10px 53px;
-    margin: 2vh 0;
-    max-width: 1200px;
-    font-weight: 200;
+.BoxInputImage__text{
+ 
+  font-size: 12px;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0;
 
-    
-  }
+
+  
+  
+}
+
+/* Final Footer Container */
+
+
 
 
 /* Media queries para pantallas pequeñas (smartphones) */
 @media (max-width: 600px) {
-  .BoxInputImage__container {
-    width: 50%; /* Ajustar el ancho para pantallas pequeñas */
-    margin-top: 20px;
-  }
-
-  .BoxInputImage__title {
-    font-size: 2rem; /* Disminuir el tamaño de la fuente para el título */
-  }
-
-  .BoxInputImage__section_input {
-    padding: 20px 0;
-  }
-
-  .BoxInputImage__button_input, 
-  .BoxInputImage__button {
-    font-size: 1rem; /* Reducir el tamaño de la fuente para los botones */
-    padding: 10px 15px;
-  }
-
-  .BoxInputImage__icon {
-    width: 20px;
-    height: 20px;
-  }
-
-  .BoxInputImage__text_submit {
-    font-size: 0.9rem; /* Reducir el tamaño de la fuente para el texto */
-  }
-
-  .BoxInputImage__fileDetails {
-    font-size: 0.9rem; /* Reducir el tamaño de la fuente para los detalles del archivo */
-  }
-
-  .BoxInputImage__text {
-    font-size: 0.8rem; /* Reducir el tamaño de la fuente para el texto del pie de página */
-  }
-
-  .BoxInputImage__button_input {
-    font-size: 0.7rem;
-  }
+  
 }
-
-/* Media queries para tablets */
-@media (min-width: 601px) and (max-width: 1024px) {
-  .BoxInputImage__container {
-    width: 50%; /* Ajustar el ancho para tablets */
-    margin: 0 100px;
-  }
-
-  .BoxInputImage__title {
-    font-size: 2.5rem; /* Aumentar el tamaño de la fuente para el título */
-  }
-
-  .BoxInputImage__section_input {
-    padding: 30px 0;
-  }
-
-  .BoxInputImage__button_input, 
-  .BoxInputImage__button {
-    font-size: 1.2rem; /* Ajustar el tamaño de la fuente para los botones */
-    padding: 12px 18px;
-  }
-
-  .BoxInputImage__icon {
-    width: 22px;
-    height: 22px;
-  }
 
  
 
-  .BoxInputImage__fileDetails {
-    font-size: 1rem; /* Ajustar el tamaño de la fuente para los detalles del archivo */
-  }
-
-  .BoxInputImage__text {
-    font-size: 0.9rem; /* Ajustar el tamaño de la fuente para el texto del pie de página */
-  }
-   .BoxInputImage__button_input {
-    font-size: 0.9rem;
-  }
-
-}
 
 /* Media queries para pantallas grandes (laptops y escritorios) */
 @media (min-width: 1005px) {
-  .BoxInputImage__container {
-    width: 70%; /* Ajustar el ancho para pantallas grandes */
-  }
-
-  .BoxInputImage__title {
-    font-size: 3rem; /* Aumentar el tamaño de la fuente para el título */
-  }
-
-  .BoxInputImage__section_input {
-    padding: 30px 0;
-  }
-
-  .BoxInputImage__button_input, 
-  .BoxInputImage__button {
-    font-size: 1.4rem; /* Ajustar el tamaño de la fuente para los botones */
-    padding: 14px 20px;
-  }
-
-  .BoxInputImage__icon {
-    width: 24px;
-    height: 24px;
-  }
-
-  .BoxInputImage__text_submit {
-    font-size: 0.9rem; /* Ajustar el tamaño de la fuente para el texto */
-  }
-
-  .BoxInputImage__fileDetails {
-    font-size: 1.2rem; /* Ajustar el tamaño de la fuente para los detalles del archivo */
-  }
-
-  .BoxInputImage__text {
-    font-size: 1rem; /* Ajustar el tamaño de la fuente para el texto del pie de página */
-  }
-   .BoxInputImage__button_input {
-    font-size: 0.9rem;
-  }
-
+ 
   
 
 }
 
 /* Media queries para pantallas grandes (laptops y escritorios) */
 @media (min-width: 1762px) {
-  .BoxInputImage__container {
-    width: 80%; /* Ajustar el ancho para pantallas grandes */
-  }
-
-  .BoxInputImage__title {
-    font-size: 3rem; /* Aumentar el tamaño de la fuente para el título */
-  }
-
-  .BoxInputImage__section_input {
-    padding: 30px 0;
-  }
-
-  .BoxInputImage__button_input, 
-  .BoxInputImage__button {
-    font-size: 1.4rem; /* Ajustar el tamaño de la fuente para los botones */
-    padding: 14px 20px;
-  }
-
-  .BoxInputImage__icon {
-    width: 24px;
-    height: 24px;
-  }
-
-  .BoxInputImage__text_submit {
-    font-size: 0.9rem; /* Ajustar el tamaño de la fuente para el texto */
-  }
-
-  .BoxInputImage__fileDetails {
-    font-size: 1.2rem; /* Ajustar el tamaño de la fuente para los detalles del archivo */
-  }
-
-  .BoxInputImage__text {
-    font-size: 1rem; /* Ajustar el tamaño de la fuente para el texto del pie de página */
-  }
-   .BoxInputImage__button_input {
-    font-size: 0.9rem;
-  }
-
+ 
   
 
 }
@@ -360,45 +129,7 @@
 
 /* Media queries para pantallas grandes (laptops y escritorios) */
 @media (max-width: 1954px) {
-  .BoxInputImage__container {
-    width: 80%; /* Ajustar el ancho para pantallas grandes */
-    
-  }
-
-  .BoxInputImage__title {
-    font-size: 3rem; /* Aumentar el tamaño de la fuente para el título */
-  }
-
-  .BoxInputImage__section_input {
-    padding: 30px 0;
-  }
-
-  .BoxInputImage__button_input, 
-  .BoxInputImage__button {
-    font-size: 1.4rem; /* Ajustar el tamaño de la fuente para los botones */
-    padding: 14px 20px;
-  }
-
-  .BoxInputImage__icon {
-    width: 24px;
-    height: 24px;
-  }
-
-  .BoxInputImage__text_submit {
-    font-size: 0.9rem; /* Ajustar el tamaño de la fuente para el texto */
-  }
-
-  .BoxInputImage__fileDetails {
-    font-size: 1.2rem; /* Ajustar el tamaño de la fuente para los detalles del archivo */
-  }
-
-  .BoxInputImage__text {
-    font-size: 1rem; /* Ajustar el tamaño de la fuente para el texto del pie de página */
-  }
-   .BoxInputImage__button_input {
-    font-size: 0.9rem;
-  }
-
+ 
   
 
 }

@@ -10,10 +10,9 @@
 }
 
 .HomeTitle__title {
-  font-size: 3.1rem;
+  font-size: 4.8rem;
   color: #F2F2F2; /* Color de texto oscuro */
   text-align: start;
-  max-width: 400px;
   font-weight: 400;
   transition: font-size 0.3s ease-in-out, max-width 0.3s ease-in-out, text-align 0.3s ease-in-out; /* Transiciones suaves para tamaño de fuente, ancho máximo y alineación del texto */
 }
@@ -23,37 +22,28 @@
 }
 
 /* Media queries para pantallas pequeñas (smartphones) */
-@media (max-width: 600px) {
-  .HomeTitle__header {
-    margin: 10px 0; /* Reducir el margen para pantallas pequeñas */
-  }
-
+@media screen and (max-width: 1663px) {
   .HomeTitle__title {
-    font-size: 2rem; /* Disminuir el tamaño de la fuente para el título */
-    text-align: center; /* Centrar el texto */
-    max-width: 90%; /* Ajustar el ancho máximo */
-  }
-
-  .HomeTitle__title__span {
-    /* No hay cambios específicos para este elemento en smartphones */
+    font-size: 3.7rem;
+    text-align: center;
   }
 }
 
-/* Media queries para tablets */
-@media (min-width: 601px) and (max-width: 1024px) {
-  .HomeTitle__header {
-    margin: 15px 0; /* Ajustar el margen para tablets */
-  }
-
+@media screen and (max-width: 1399px) {
   .HomeTitle__title {
-    font-size: 2.8rem; /* Aumentar el tamaño de la fuente para el título */
-    text-align: center; /* Centrar el texto */
-    max-width: 95%; /* Ajustar el ancho máximo */
-  }
-
-  .HomeTitle__title__span {
-    /* No hay cambios específicos para este elemento en tablets */
+    font-size: 2.3rem;
+    text-align: center;
   }
 }
+
+@media screen and (max-width: 911px) {
+  .HomeTitle__title {
+    font-size: 1.8rem;
+    text-align: center;
+  }
+}
+
+
+
 
 /* Considera agregar puntos de ruptura adicionales para pantallas más grandes si es necesario */
