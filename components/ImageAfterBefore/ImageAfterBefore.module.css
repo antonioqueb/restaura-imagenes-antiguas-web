@@ -74,7 +74,7 @@
   }
 
   .ImageAfterBefore__image__after {
-    /* Ajuste del clip-path para la vista móvil */
+    /* Ajuste del clip-path para la vista móvil  */
     clip-path: inset(0 calc(100% - var(--slider-position, 50%)) 0 0);
   }
 }
