@@ -3,6 +3,11 @@ import './globals.css'
 import NavbarComponent from '@/components/Navbar/Navbar'
 
 
+export const metadata = {
+  title: 'IA App',
+  description: 'Restaura imagenes antiguas con IA',
+}
+
 export default function RootLayout({ children }) {
   return (
     <html lang="es">
