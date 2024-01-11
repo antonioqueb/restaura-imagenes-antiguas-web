@@ -15,8 +15,8 @@ export const ImageAfterBefore = () => {
   return (
     <section className={styles.ImageAfterBefore__start} onMouseMove={handleMouseMove}>
       <div className={styles.ImageAfterBefore__beforeAfter} style={{ '--slider-position': sliderPosition + '%' }}>
-          <Image className={styles.ImageAfterBefore__image__before} src="/antes.png" alt="Antes" width={400} height={400} />
-          <Image className={styles.ImageAfterBefore__image__after} src="/despues.png" alt="Después" width={400} height={400} />
+          <Image className={styles.ImageAfterBefore__image__before} src="/antes.png" alt="Antes" width={200} height={200} />
+          <Image className={styles.ImageAfterBefore__image__after} src="/despues.png" alt="Después" width={200} height={200} />
           <div className={styles.ImageAfterBefore__slider} />
         </div>
       </section>

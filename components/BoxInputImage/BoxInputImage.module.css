@@ -104,7 +104,20 @@
 
 
 /* Media queries para pantallas pequeñas (smartphones) */
-@media (max-width: 600px) {
+@media screen and (max-width: 755px) {
+
+  .BoxInputImage__container {
+  border: 6px dotted #BF9F78; /* Grosor de línea aumentado */
+  justify-content: center;
+  align-items: center;
+  border-radius: 14px;
+  display: flex;
+  flex-direction: column;
+  background-color: #1F1F1F; /* Color de fondo */
+  width: 100%;
+  height: 250px;
+
+}
   
 }
 

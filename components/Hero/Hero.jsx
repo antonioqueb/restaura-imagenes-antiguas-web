@@ -1,4 +1,5 @@
 'use client';
+
 import { useState } from 'react';
 import Image from 'next/image';
 import styles from './Hero.module.css';
@@ -17,19 +18,21 @@ export const Hero = () => {
 
   return (
     <div className={styles.Hero__container_master}>
-    <div className={styles.Hero__container}>
-      <div className={styles.Hero__start}>
-     <ImageAfterBefore/>
-      <HomeTitle />
+      <div className={styles.Hero__container}>
+        <div className={styles.Hero__start}>
+          <div className={styles.Hero__image_container}>
+          <ImageAfterBefore />
+          </div>
+          <div className={styles.Hero__title_container}>
+          <HomeTitle />
+          </div>
+        </div>
+        <section className={styles.Hero__end}>
+          <BoxInputImage />
+        </section>
       </div>
-      <section className={styles.Hero__end}>
-        <BoxInputImage />
-      </section>
-    </div>
-
     </div>
   );
-  
 };
 
 export default Hero;
