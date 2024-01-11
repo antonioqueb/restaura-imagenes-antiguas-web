@@ -23,11 +23,17 @@
 
 
 
-@media screen and (max-width: 850px) {
-  .HomeTitle__title {
-    font-size: 2rem;
-    align-items: center;
 
-  }
+
+
+@media screen and (min-width: 412px) {
+ .HomeTitle__title {
+  font-size: 1rem;
+  color: #F2F2F2; /* Color de texto oscuro */
+  text-align: start;
+  font-weight: bold;
+  transition: font-size 0.3s ease-in-out, max-width 0.3s ease-in-out, text-align 0.3s ease-in-out; /* Transiciones suaves para tamaño de fuente, ancho máximo y alineación del texto */
 }
+}
+
 
