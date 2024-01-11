@@ -70,7 +70,7 @@
   }
 
   .ImageAfterBefore__slider {
-    width: 3px;
+   display: none;
   }
 
   .ImageAfterBefore__image__after {
