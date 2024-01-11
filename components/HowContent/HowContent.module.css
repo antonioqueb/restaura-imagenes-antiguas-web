@@ -1,7 +1,7 @@
 .HowContent__contenedor {
   display: flex;
   background-color: transparent;
-  max-width: 70%;
+  max-width: 66%;
   justify-content: space-between;
   
 }
@@ -10,12 +10,13 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 1rem;
   width: 100%;
   height: 100%;
   border-left: none;
   border-right: none;
   flex: 50%;
+  padding: 0 3.3rem;
+
 
 }
 
@@ -48,6 +49,7 @@
     display: grid;
     grid-template-columns: 1fr;
     max-width: 100%;
+
   }
   
   
