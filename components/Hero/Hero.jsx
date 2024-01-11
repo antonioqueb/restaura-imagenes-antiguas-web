@@ -1,22 +1,11 @@
 'use client';
-
-import { useState } from 'react';
-import Image from 'next/image';
 import styles from './Hero.module.css';
 import BoxInputImage from '../BoxInputImage/BoxInputImage'; 
 import ImageAfterBefore from '../ImageAfterBefore/ImageAfterBefore';
 import HomeTitle from '../HomeTitle/HomeTitle';
-import TitileTestimony from '../TitileTestimony/TitileTestimony';
 import MainContent from '../MainContent/MainContent';
 
 export const Hero = () => {
-  const [sliderPosition, setSliderPosition] = useState(50);
-
-  const handleMouseMove = (e) => {
-    const bounds = e.currentTarget.getBoundingClientRect();
-    const position = ((e.clientX - bounds.left) / bounds.width) * 100;
-    setSliderPosition(position);
-  };
 
   return (
     <>
