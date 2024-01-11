@@ -86,28 +86,18 @@
 /* Ítems de navegación: Modificador del Elemento navbar__navigation */
 .navbar__item {
   flex: 1;
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   color: #F2F2F2;
   cursor: pointer;
   transition: color 0.3s ease;
   text-align: center;
-  margin: 0 0 0 2vh;
+  margin: 0 0 0 3vw;
   text-decoration: none; 
 
 }
 
 
 
-.navbar__item  a {
-  color: inherit; /* Hace que el enlace herede el color de .navbar__item */
-  text-decoration: none; /* Elimina el subrayado del enlace */
-}
-
-/* Estilos específicos para enlaces dentro de navbar__item y navbar__logo-text */
-.navbar__item a, .navbar__logo-text a {
-  text-decoration: none; /* Elimina el subrayado */
-  color: inherit; /* Hereda el color de texto del elemento padre */
-}
 
 .navbar__item:hover {
   color: #BF9F78;
