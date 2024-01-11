@@ -42,3 +42,16 @@
   color: rgb(208, 208, 208);
   margin-bottom: 1rem;
 }
+@media screen and (max-width: 768px) {
+  .HowContent__contenedor {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  
+  
+
+  
+  
+ 
+  
+}
