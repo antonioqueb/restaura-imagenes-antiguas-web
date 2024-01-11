@@ -1,8 +1,9 @@
 .HowContent__contenedor {
   display: flex;
   background-color: transparent;
-  max-width: 49%;
+  max-width: 70%;
   justify-content: space-between;
+  
 }
 
 .HowContent__contenedor__texto{
@@ -46,6 +47,7 @@
   .HowContent__contenedor {
     display: grid;
     grid-template-columns: 1fr;
+    max-width: 100%;
   }
   
   

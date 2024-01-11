@@ -1,8 +1,14 @@
 .MainContent__contenedor {
   display: grid;
   grid-template-columns: 1fr;
+  background-color: transparent;
+  
 }
 
+.MainContent__section__testimony{
+    padding: 0 0 25vh 0;
+
+}
 
 
 .MainContent__section__testimony__container{
