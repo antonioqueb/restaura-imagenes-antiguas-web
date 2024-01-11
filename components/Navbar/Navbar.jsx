@@ -3,59 +3,35 @@ import Image from "next/image";
 import styles from './Navbar.module.css';
 import { GrMoreVertical } from "react-icons/gr";
 
+const links = [
+  { href: "/", label: "¿Cómo se usa?", key: "explorar" },
+  { href: "/tienda", label: "Precios", key: "tienda" },
+  { href: "/colaborar", label: "Nosotros", key: "nosotros" },
+  { href: "/blog", label: "Blog", key: "blog" },
+];
+
 const NavbarComponent = () => (
-
   <nav className={styles.navbar}>
-  
-    <section className={styles['navbar__section--start']}>
-      {/* Elemento: navbar__logo */}
-      <div className={styles['navbar__logo']}>
-        <Link href="/">
-          {/* Modificador: navbar__logo-text */}
-          <Image src="/logo-b.png" alt="Logo" width={60} height={60} /> 
-          
-        </Link>
-      </div>
-   
-    </section>
-    <section className={styles['navbar__section--center']}>
-         
-      {/* Elemento: navbar__navigation */}
-      <div className={styles['navbar__navigation']}>
-        <Link href="/explorar" >
-          {/* Modificador: navbar__item */}
-          <span className={styles['navbar__item']}>¿Cómo se usa?</span>
-        </Link>
-        <Link href="/tienda">
-          <span className={styles['navbar__item']}>Precios</span>
-        </Link>
-        <Link href="/colaborar">
-          <span className={styles['navbar__item']}>Nosotros</span>
-          
-        </Link>
-        <Link href="/colaborar">
-          <span className={styles['navbar__item']}>Blog</span>
-        </Link>
-      </div>
-    </section>
+    <div className={styles['navbar__logo']}>
+      <Link href="/">
+        <Image src="/logo-b.png" alt="Logo" width={60} height={60} />
+      </Link>
+    </div>
 
-    <section className={styles['navbar__section--end']}>
-
-      {/* Elemento: Boton call to action */}
-      <div className={styles['navbar__cta']}>
-        
-       
-      </div>
-      <div className={styles['navbar__icons']}>
-      <div className={styles['navbar__user']}>
-        <Link href="/usuario">
-          <GrMoreVertical className={styles['navbar__icon']} />
+    <div className={styles['navbar__navigation']}>
+    {links.map(({ href, label, key }) => (
+        <Link href={href} key={key}  style={{ textDecoration: 'none' }}>
+            <span className={styles['navbar__item']}>{label}</span>
         </Link>
-      </div>
-      </div>
+    ))}
 
-    </section>
+    </div>
 
+    <div className={styles['navbar__icons']}>
+      <Link href="/usuario"  style={{ textDecoration: 'none' }}>
+        <GrMoreVertical className={styles['navbar__icon']} />
+      </Link>
+    </div>
   </nav>
 );
 

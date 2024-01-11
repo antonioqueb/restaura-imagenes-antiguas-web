@@ -36,6 +36,7 @@
   width: 65%;
   justify-content: center;
   padding: 1rem 2.5rem;
+  text-decoration: none;
   
   
 
@@ -90,18 +91,28 @@
   cursor: pointer;
   transition: color 0.3s ease;
   text-align: center;
-  text-decoration: none;
   margin: 0 0 0 2vh;
-  
-}
-.navbar__item a {
+  text-decoration: none; 
 
-  text-decoration: none;
-  
 }
+
+
+
+.navbar__item  a {
+  color: inherit; /* Hace que el enlace herede el color de .navbar__item */
+  text-decoration: none; /* Elimina el subrayado del enlace */
+}
+
+/* Estilos específicos para enlaces dentro de navbar__item y navbar__logo-text */
+.navbar__item a, .navbar__logo-text a {
+  text-decoration: none; /* Elimina el subrayado */
+  color: inherit; /* Hereda el color de texto del elemento padre */
+}
+
 .navbar__item:hover {
-  color:#BF9F78;
+  color: #BF9F78;
 }
+
 
 /* Estilos para los iconos en la navbar */
 .navbar__icon {
