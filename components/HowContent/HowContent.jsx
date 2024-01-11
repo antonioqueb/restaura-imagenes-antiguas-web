@@ -1,6 +1,5 @@
 
   //HowContent
-  import React from 'react';
 import styles from './HowContent.module.css';
 import Image from 'next/image';
 
