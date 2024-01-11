@@ -1,0 +1,71 @@
+.container_master{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  max-width: 80%;
+  height: 100%;
+
+  
+
+  
+}
+
+.container_reverse {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row-reverse; /* Invierte la dirección */
+  max-width: 80%;
+  height: 100%;
+
+
+
+  
+}
+
+.container__img {
+  flex: 50%; /* Mantiene el tamaño de la imagen */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container__text {
+  flex: 50%; /* Permite crecer para llenar el espacio disponible */
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+}
+
+/* Estilos para el título y párrafos */
+.container__text__title {
+  font-size: 1.3em;
+  color: #BF9F78;
+  margin:  0 0 15px 0;
+}
+
+.container__text__paragraph {
+  font-size: 1.2em;
+  line-height: 1.6;
+  color: #c0c0c0;
+}
+
+/* Diseño responsivo */
+@media (max-width: 768px) {
+  .container, .container_reverse {
+    flex-direction: column;
+  }
+
+  .container__img, .container__text {
+    max-width: 100%;
+  }
+}

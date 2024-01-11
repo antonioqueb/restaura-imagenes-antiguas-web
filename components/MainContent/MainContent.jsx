@@ -4,6 +4,7 @@
 import styles from './MainContent.module.css';
 import TitileTestimony from '../TitileTestimony/TitileTestimony';
 import TestimonyCardItem from '../TestimonyCardItem/TestimonyCardItem';
+import CopyContent from '../CopyContent/CopyContent';
 
 export const MainContent = () => {
   return (
@@ -19,6 +20,7 @@ export const MainContent = () => {
 
       </section>
       <section className={styles.MainContent__section__how}>
+        <CopyContent/>
       </section>
       <section className={styles.MainContent__section__where}>
       </section>

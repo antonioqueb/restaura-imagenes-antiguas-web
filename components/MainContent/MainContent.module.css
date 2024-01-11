@@ -3,7 +3,9 @@
   grid-template-columns: 1fr;
 }
 
-.MainContent__section__testimony__container {
+
+
+.MainContent__section__testimony__container{
   display: flex;
   flex-direction: column;
   align-items: center;
