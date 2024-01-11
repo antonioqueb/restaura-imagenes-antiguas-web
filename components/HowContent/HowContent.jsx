@@ -1,5 +1,5 @@
 
-  //HowContent
+  //  HowContent
 import styles from './HowContent.module.css';
 import Image from 'next/image';
 
