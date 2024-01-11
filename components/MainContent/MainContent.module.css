@@ -1,0 +1,11 @@
+.MainContent__contenedor {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.MainContent__section__testimony__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}

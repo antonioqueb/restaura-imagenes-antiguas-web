@@ -6,6 +6,8 @@ import styles from './Hero.module.css';
 import BoxInputImage from '../BoxInputImage/BoxInputImage'; 
 import ImageAfterBefore from '../ImageAfterBefore/ImageAfterBefore';
 import HomeTitle from '../HomeTitle/HomeTitle';
+import TitileTestimony from '../TitileTestimony/TitileTestimony';
+import MainContent from '../MainContent/MainContent';
 
 export const Hero = () => {
   const [sliderPosition, setSliderPosition] = useState(50);
@@ -17,6 +19,7 @@ export const Hero = () => {
   };
 
   return (
+    <>
     <div className={styles.Hero__container_master}>
       <div className={styles.Hero__container}>
         <div className={styles.Hero__start}>
@@ -32,6 +35,8 @@ export const Hero = () => {
         </section>
       </div>
     </div>
+    <MainContent />
+    </>
   );
 };
 

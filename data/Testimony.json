@@ -1,0 +1,23 @@
+{
+    "testimonios": [
+      {
+        "nombre": "María González",
+        "ubicacion": "Madrid, España",
+        "testimonio": "Gracias a esta increíble herramienta, pude restaurar una foto de mi tatarabuelo. La imagen, que apenas se distinguía, ahora está llena de vida, mostrando detalles que nunca imaginé ver.",
+        "fotoPerfil": "/maria.jpg"
+      },
+      {
+        "nombre": "Carlos Jiménez",
+        "ubicacion": "Ciudad de México, México",
+        "testimonio": "Estoy asombrado con la calidad de la restauración. Mis fotos de infancia, que estaban descoloridas y dañadas, ahora parecen haber sido tomadas ayer. ¡Increíble trabajo!",
+        "fotoPerfil": "/carlos.jpg"
+      },
+      {
+        "nombre": "Lucía Fernández",
+        "ubicacion": "Buenos Aires, Argentina",
+        "testimonio": "Recuperar la foto de mi bisabuela en su juventud ha sido una experiencia emocional. La calidad de restauración es impresionante, y el proceso fue sorprendentemente sencillo.",
+        "fotoPerfil": "/lucia.jpg"
+      }
+    ]
+  }
+  

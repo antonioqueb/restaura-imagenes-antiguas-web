@@ -1,0 +1,70 @@
+/* TestimonyCardItem.module.css */
+.testimony-card-item {
+  display: flex;
+  align-items: center;
+  gap: 20px; /* Espacio entre tarjetas */
+  border-radius: 14px;
+}
+
+.testimony-card-item__card {
+  backdrop-filter: blur(10px); /* Efecto de cristal borroso */
+  border-radius: 10px; /* Bordes redondeados */
+  padding: 20px;
+  width: 300px; /* Ajusta según tus necesidades */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px; /* Espacio entre elementos dentro de la tarjeta */
+  border: #fdfdfd 1px solid;
+  max-width: 300px;
+  height: 400px;
+  margin-bottom: 24vh;
+  justify-content: center;
+
+
+}
+
+.testimony-card-item__photo {
+  border-radius: 50%; /* Hace la imagen circular */
+  border: #BF9F78 5px dotted;
+  margin: 4vh 0;
+}
+
+.testimony-card-item__name {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #f6f6f6;
+  margin: 2vh 0 0.1vh 0;
+
+}
+
+.testimony-card-item__location {
+  font-size: 1rem;
+  color: #d8d8d8;
+    margin: 0.1vh 0 2vh 0;
+
+}
+
+.testimony-card-item__text {
+  font-size: 0.9rem;
+  color: #d0d0d0;
+  text-align: start;
+  margin: 0 0 2vh 0;
+}
+
+@media screen and (max-width: 850px) {
+  .testimony-card-item {
+    flex-direction: column;
+    gap: 0;
+    margin: 4rem;
+  }
+
+  .testimony-card-item__card {
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
+    margin-bottom: 10px;
+
+  }
+  
+}

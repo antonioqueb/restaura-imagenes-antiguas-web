@@ -29,7 +29,9 @@ const generateJsTemplate = (name, columns, divideMore, divideSide, additionalFea
     additionalJs += `<button className={styles.${name}__boton}>Haz clic aquí</button>\n  `;
   }
 
-  return `import React from 'react';
+  return `
+  //${name}
+  import React from 'react';
 import styles from './${name}.module.css';
 
 export const ${name} = () => {
