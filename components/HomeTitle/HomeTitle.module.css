@@ -23,24 +23,11 @@
 
 
 
-@media screen and (max-width: 755px) {
+@media screen and (max-width: 850px) {
   .HomeTitle__title {
-    font-size: 3rem;
+    font-size: 2rem;
     align-items: center;
 
   }
 }
 
-
-@media screen and (max-width: 488px) {
-  .HomeTitle__title {
-    font-size: 1.3rem;
-    align-items: center;
-
-  }
-}
-
-
-
-
-/* Considera agregar puntos de ruptura adicionales para pantallas más grandes si es necesario */
