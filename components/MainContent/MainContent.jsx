@@ -1,10 +1,9 @@
 
   //MainContent
-  import React from 'react';
+import React from 'react';
 import styles from './MainContent.module.css';
 import TitileTestimony from '../TitileTestimony/TitileTestimony';
 import TestimonyCardItem from '../TestimonyCardItem/TestimonyCardItem';
-import CopyContent from '../CopyContent/CopyContent';
 import HowContent from '../HowContent/HowContent';
 import WhyContent from '../WhyContent/WhyContent';
 

@@ -10,7 +10,7 @@ export const HowContent = () => {
     <div className={styles.HowContent__contenedor}>
 
     <div className={styles.HowContent__contenedor__imagen}>
-      <Image src="/restaurar.svg" width={300} height={300} />
+      <Image src="/restaurar.svg" width={400} height={400} />
     </div>  
     <div className={styles.HowContent__contenedor__texto}>
       <h2 className={styles.HowContent__contenedor__texto__titulo}>Tecnología al Servicio de Tus Recuerdos</h2>
