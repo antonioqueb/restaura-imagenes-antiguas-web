@@ -5,6 +5,8 @@ import styles from './MainContent.module.css';
 import TitileTestimony from '../TitileTestimony/TitileTestimony';
 import TestimonyCardItem from '../TestimonyCardItem/TestimonyCardItem';
 import CopyContent from '../CopyContent/CopyContent';
+import HowContent from '../HowContent/HowContent';
+import WhyContent from '../WhyContent/WhyContent';
 
 export const MainContent = () => {
   return (
@@ -20,13 +22,13 @@ export const MainContent = () => {
 
       </section>
       <section className={styles.MainContent__section__how}>
-        <CopyContent/>
+      <HowContent/>
+      </section>
+      <section className={styles.MainContent__section__why}>
+        <WhyContent/>
       </section>
       <section className={styles.MainContent__section__where}>
       </section>
-      <section className={styles.MainContent__section__why}>
-      </section>
-
 
 
       

@@ -16,7 +16,7 @@
   align-items: center;
   gap: 10px; /* Espacio entre elementos dentro de la tarjeta */
   border: #fdfdfd 1px solid;
-  max-width: 300px;
+  max-width: 290px;
   height: 400px;
   margin-bottom: 24vh;
   justify-content: center;

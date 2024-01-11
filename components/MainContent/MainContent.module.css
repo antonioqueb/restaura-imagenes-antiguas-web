@@ -11,3 +11,21 @@
   align-items: center;
   gap: 20px;
 }
+
+.MainContent__section__how{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 8vw;
+  
+}
+
+.MainContent__section__why{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 8vw;
+
+}
