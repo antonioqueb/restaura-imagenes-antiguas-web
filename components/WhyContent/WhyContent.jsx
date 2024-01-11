@@ -8,7 +8,7 @@ export const WhyContent = () => {
   return (
     <div className={styles.WhyContent__contenedor}>
           <div className={styles.WhyContent__contenedor__imagen}>
-      <Image src="/posibilidades.svg" width={300} height={300} />
+      <Image src="/posibilidades.svg" width={300} height={300}  alt='Grafico que representa las posibilidades de la herramienta para Restaurar Fotos Antiguas Online'/>
     </div>  
     <div className={styles.WhyContent__contenedor__texto}>
       <h2 className={styles.WhyContent__contenedor__texto__titulo}>Un Mundo de Posibilidades</h2>
