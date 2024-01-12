@@ -75,8 +75,9 @@
   }
 
   .WhyContent__contenedor__imagen {
-    width: 70%;
-    margin: 0 auto;
+    width: 40%;
+        margin: 0 1vh;
+
   }
 }
 
